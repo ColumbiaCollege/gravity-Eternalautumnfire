@@ -24,7 +24,7 @@ void setup() {
 
 
 void draw() {
-  //  background (225);
+  //background (225);
   //fill(#64491F);
   ////Rectangle used for ground layer
   //rect(0, 500, 1200, 500);
@@ -32,7 +32,7 @@ void draw() {
   //ellipse(600, 50, 1100, 100);
   //yPos+=shiftY;
   //shiftY+=yAcc;
-  //for (int i =1; i<24; i++) {
+  //for (int a =1; a<24; a++) {
   //  fill(#36EDFC);
   //  stroke(0);
   //  ellipse(shiftX, shiftY, 10, 25);
