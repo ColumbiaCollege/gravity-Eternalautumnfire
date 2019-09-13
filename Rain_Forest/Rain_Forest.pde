@@ -2,17 +2,49 @@
 //Jeremiah Wilson 10 Sept 2019
 //Sets global variable i equal to 0
 int i = 0;  
+
+float yPos =0;
+float yAcc= 10;
+float shiftX = random(100, 900*0.9);
+float shiftY = random(100, 100);
+float ground = random(600);
+
+
 void setup() {
   //Window size with background set to "sky blue"
   size (1200, 900);
-  background (#A9F1FA);
+  background (245);
   fill(#64491F);
   //Rectangle used for ground layer
   rect(0, 500, 1200, 500);
+  fill(200);
+  ellipse(600, 50, 1100, 100);
 }
 
 
+
 void draw() {
+  //  background (225);
+  //fill(#64491F);
+  ////Rectangle used for ground layer
+  //rect(0, 500, 1200, 500);
+  //fill(200);
+  //ellipse(600, 50, 1100, 100);
+  //yPos+=shiftY;
+  //shiftY+=yAcc;
+  //for (int i =1; i<24; i++) {
+  //  fill(#36EDFC);
+  //  stroke(0);
+  //  ellipse(shiftX, shiftY, 10, 25);
+  //}
+  //if (shiftY>random(500, 2000)) {
+  //  shiftY=100;
+  //  shiftX = random(100, 900*0.9);
+  //}
+  //fill(200);
+  //ellipse(600, 50, 1100, 100);
+  //redraw();
+  //loop();
 
   //Function while acts like a for loop to continuosly execute the draw function until i is greater than 60. When i is greater than 60 the draw command ceases.
   while (i<60) {
@@ -62,3 +94,22 @@ void draw() {
     text("A forest grew! I must be Johnny Appleseed or something!", width/2, 125);
   }
 }
+
+//float yPos =0;
+//float yVelocity =1;
+//float yAcc=0.02;
+//float shiftX = random(800,800);
+//float shiftY = random(800,800);
+
+//void setup(){
+//size(900,900);
+//background(255);
+//}
+
+//void draw(){
+//  yPos+=yVelocity;
+//  yVelocity+=yAcc;
+//fill(#36EDFC);
+//stroke(0);
+//ellipse(shiftX,yVelocity,10,25);
+//}
